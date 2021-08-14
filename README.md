@@ -1,5 +1,23 @@
 # Website
 
+## Techstacks
+- Angular 12.2.1
+- TailwindCSS 2.2.7
+- TypeScript 4.3.5
+
+## Deploy
+- Build project
+```
+ng build --base-href "https://GithubUserName.github.io/GIthubRepoName/"
+```
+
+- Deploy
+```
+npx angular-cli-ghpages --dir=dist/Project-name
+```
+
+- Visit **https://GithubUserName.github.io/GithubRepoName/**
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.1.
 
 ## Development server
