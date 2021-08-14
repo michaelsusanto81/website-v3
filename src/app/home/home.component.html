@@ -1,1 +1,36 @@
-<p>home works!</p>
+<div
+  class="table w-full h-[80vh]">
+  <div
+    class="table-cell align-middle">
+    <div
+      class="flex flex-col md:flex-row flex-wrap justify-center items-center">
+        <img
+          src="assets/michaelsusanto-profile.png"
+          class="w-52 sm:w-64 h-52 sm:h-64 rounded-full"/>
+        <div
+          class="flex flex-col justify-center text-3xl sm:text-4xl lg:text-5xl md:ml-12">
+          <h1
+            class="font-semibold text-center md:text-left mt-8 md:mt-0">
+            Hi!
+          </h1>
+          <h1
+            class="my-6">
+            I'm <span class="font-semibold">Michael Susanto</span>
+          </h1>
+          <div
+            class="flex justify-center md:justify-start">
+            <a
+              *ngFor="let contact of contacts"
+              href="{{contact.href}}"
+              target="_blank"
+              rel="noreferrer">
+              <img
+                src="{{contact.src}}"
+                alt="{{contact.alt}}"
+                class="w-8 mr-6 mt-2"/>
+            </a>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
