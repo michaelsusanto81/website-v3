@@ -1,0 +1,20 @@
+<nav
+  class="flex flex-col sm:flex-row flex-wrap justify-between items-center p-4 px-6">
+
+  <h1
+    class="text-3xl font-semibold text-center sm:text-left">
+    Michaelsto
+  </h1>
+
+  <div
+    class="flex flex-wrap justify-around">
+    <a
+      *ngFor="let menu of nav_menus"
+      class="text-gray-700 sm:text-xl mx-4 my-2 sm:ml-10 sm:my-0"
+      [routerLink]="[menu.link]"
+      [routerLinkActive]="['text-black', 'font-semibold']"
+      [routerLinkActiveOptions]="{exact: true}">
+      {{menu.name}}
+    </a>
+  </div>
+</nav>
