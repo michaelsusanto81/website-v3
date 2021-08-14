@@ -13,7 +13,8 @@
       class="text-gray-700 sm:text-xl mx-4 my-2 sm:ml-10 sm:my-0"
       [routerLink]="[menu.link]"
       [routerLinkActive]="['text-black', 'font-semibold']"
-      [routerLinkActiveOptions]="{exact: true}">
+      [routerLinkActiveOptions]="{exact: true}"
+      [replaceUrl]="true">
       {{menu.name}}
     </a>
   </div>
